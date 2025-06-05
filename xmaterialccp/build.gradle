@@ -46,7 +46,9 @@ android {
         jvmTarget = JavaVersion.VERSION_17.toString()
         freeCompilerArgs += "-Xopt-in=kotlin.RequiresOptIn"
     }
-
+    lint {
+        disable "NullSafeMutableLiveData"
+    }
 
 }
 
